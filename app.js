@@ -26,13 +26,13 @@ var con = mysql.createPool({
     database: "heroku_aea4dd43fd7100b"
 });
 
-con.connect((err) => {
-    if (err) {
-        throw err;
-    } else {
-        console.log("Database Connected!");
-    }
-})
+// con.connect((err) => {
+//     if (err) {
+//         throw err;
+//     } else {
+//         console.log("Database Connected!");
+//     }
+// })
 
 
 // Parses the request body and transforms it 
