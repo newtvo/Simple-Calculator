@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `sum` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  num1 varchar(255) NOT NULL,
+  num2 varchar(255) NOT NULL,
+  sum varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
