@@ -1,5 +1,6 @@
-CREATE USER 'username1'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'username1'@'localhost' WITH GRANT OPTION;
-CREATE USER 'username1'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'username1'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+CREATE TABLE IF NOT EXISTS `sum` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  num1 varchar(255) NOT NULL,
+  num2 varchar(255) NOT NULL,
+  sum varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
