@@ -50,10 +50,10 @@ app.post('/', (req, res) => {
 
 });
 
-let port = process.env.PORT || 3000
+let PORT = process.env.PORT || 3000
 
-app.listen(port,(res) => {
-    console.log(`Server started at port ${port} `)
+app.listen(PORT,(res) => {
+    console.log(`Server started at port ${PORT}. `)
 });
 
 
