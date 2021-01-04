@@ -58,11 +58,3 @@ app.listen(PORT,(res) => {
 
 
 
-// Create DB
-// app.get('/createdb', (req, res) => {
-//     let sql = 'CREATE DATABASE nodemysql';
-//     con.query(sql, (err, result) => {
-//         if(err) throw err;
-//         res.send('Database created...');
-//     })
-// })
