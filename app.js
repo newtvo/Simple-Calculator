@@ -11,20 +11,28 @@ var app = express();
 //     database: "nodemysql"
 // });
 
-var con = mysql.createConnection({
+// var con = mysql.createConnection({
+//     host: "us-cdbr-east-02.cleardb.com",
+//     user: "b83002a7a7af00",
+//     password: "7eb049f7",
+//     database: "heroku_aea4dd43fd7100b"
+// });
+
+var con = mysql.createPool({
+    connectionLimit: 100,
     host: "us-cdbr-east-02.cleardb.com",
     user: "b83002a7a7af00",
     password: "7eb049f7",
     database: "heroku_aea4dd43fd7100b"
 });
 
-con.connect((err) => {
-    if (err) {
-        throw err;
-    } else {
-        console.log("Database Connected!");
-    }
-})
+// con.connect((err) => {
+//     if (err) {
+//         throw err;
+//     } else {
+//         console.log("Database Connected!");
+//     }
+// })
 
 
 // Parses the request body and transforms it 
